@@ -6,6 +6,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
   return {
     root: 'src',
+    publicDir: '../public',
     base: '/Hengkang-Webpage/',
     server: {
       port: 3000,
