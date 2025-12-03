@@ -12,51 +12,51 @@ export const NAV_ITEMS: NavItem[] = [
 export const PRODUCTS: Product[] = [
   {
     id: 'p1',
-    name: 'HengLife™ Amino',
-    category: 'Animal Nutrition',
-    description: 'High-purity amino acids designed for optimal livestock health and growth efficiency.',
-    image: 'https://picsum.photos/800/600?random=1',
-    applications: ['Poultry', 'Swine', 'Aquaculture']
+    name: 'Metformin Hydrochloride',
+    category: 'Pharmaceuticals',
+    description: 'High-quality pharmaceutical raw material used primarily for the treatment of type 2 diabetes. Produced in the world\'s largest single-line production facility.',
+    image: '/Hengkang-Webpage/assets/images/product_metformin.png',
+    applications: ['Pharmaceuticals', 'Diabetes Treatment']
   },
   {
     id: 'p2',
-    name: 'PharmaGrade™ Excipients',
-    category: 'Pharmaceuticals',
-    description: 'Critical stabilizing agents for next-generation drug delivery systems.',
-    image: 'https://picsum.photos/800/600?random=2',
-    applications: ['Tablet Binding', 'Controlled Release']
+    name: 'Creatine Monohydrate',
+    category: 'Nutritional Additives',
+    description: 'Premium nutritional supplement widely used in sports nutrition and health products to enhance muscle strength and recovery.',
+    image: '/Hengkang-Webpage/assets/images/product_creatine.png',
+    applications: ['Sports Nutrition', 'Health Supplements', 'Food Additives']
   },
   {
     id: 'p3',
-    name: 'DuraBuild™ Additives',
-    category: 'Construction',
-    description: 'Polymer additives enhancing durability and weather resistance in concrete structures.',
-    image: 'https://picsum.photos/800/600?random=3',
-    applications: ['Infrastructure', 'Commercial Building']
+    name: 'Guanidinoacetic Acid (GAA)',
+    category: 'Nutritional Additives',
+    description: 'A precursor to creatine, used as a highly effective feed additive to improve growth performance in livestock.',
+    image: '/Hengkang-Webpage/assets/images/product_gaa.png',
+    applications: ['Animal Feed', 'Livestock Nutrition']
   },
   {
     id: 'p4',
-    name: 'BioSafe Solvents',
-    category: 'Industrial',
-    description: 'Eco-friendly solvents reducing VOC emissions in industrial coating processes.',
-    image: 'https://picsum.photos/800/600?random=4',
-    applications: ['Automotive Coatings', 'Marine']
+    name: 'Epoxy Resin Curing Agent (DICY)',
+    category: 'New Materials',
+    description: 'Super-fine Dicyandiamide used as a latent curing agent for epoxy resins, offering excellent stability and adhesive properties.',
+    image: '/Hengkang-Webpage/assets/images/product_dicy.png',
+    applications: ['Electronic Materials', 'Coatings', 'Adhesives', 'Composite Materials']
   },
   {
     id: 'p5',
-    name: 'NutriBoost Z',
-    category: 'Animal Nutrition',
-    description: 'Zinc-based additive for immune system support in early-stage growth.',
-    image: 'https://picsum.photos/800/600?random=5',
-    applications: ['Swine', 'Ruminants']
+    name: 'Accelerator',
+    category: 'New Materials',
+    description: 'Specialized chemical accelerator used to speed up reaction processes in various industrial applications.',
+    image: '/Hengkang-Webpage/assets/images/product_accelerator.jpg',
+    applications: ['Industrial Processing', 'Chemical Synthesis']
   },
   {
     id: 'p6',
-    name: 'HengFlow 500',
-    category: 'Construction',
-    description: 'Superplasticizer for high-performance concrete flow.',
-    image: 'https://picsum.photos/800/600?random=6',
-    applications: ['High-rise', 'Bridges']
+    name: 'Sodium Sarcosinate',
+    category: 'New Materials',
+    description: 'An amino acid derivative used in the production of biodegradable surfactants and toothpaste.',
+    image: '/Hengkang-Webpage/assets/images/product_accelerator.jpg', // Using same image as placeholder if specific one wasn't distinct
+    applications: ['Surfactants', 'Personal Care', 'Industrial Cleaning']
   }
 ];
 

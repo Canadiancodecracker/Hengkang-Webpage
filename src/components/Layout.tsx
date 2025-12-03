@@ -21,10 +21,10 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer">
-             <div className={`w-8 h-8 ${scrolled ? 'bg-blue-900' : 'bg-white'} rounded-sm`}></div>
-             <span className={`text-xl font-bold tracking-tight ${scrolled ? 'text-slate-900' : 'text-white'}`}>
-               HENGKANG
-             </span>
+            <div className={`w-8 h-8 ${scrolled ? 'bg-blue-900' : 'bg-white'} rounded-sm`}></div>
+            <span className={`text-xl font-bold tracking-tight ${scrolled ? 'text-slate-900' : 'text-white'}`}>
+              HENGKANG
+            </span>
           </div>
 
           {/* Desktop Nav */}
@@ -34,10 +34,9 @@ const Navbar = () => {
                 key={item.path}
                 to={item.path}
                 className={({ isActive }) =>
-                  `text-sm font-medium tracking-wide transition-colors ${
-                    isActive 
-                      ? 'text-purple-600 font-bold' 
-                      : scrolled ? 'text-slate-600 hover:text-purple-600' : 'text-white/90 hover:text-white'
+                  `text-sm font-medium tracking-wide transition-colors ${isActive
+                    ? 'text-purple-600 font-bold'
+                    : scrolled ? 'text-slate-600 hover:text-purple-600' : 'text-white/90 hover:text-white'
                   }`
                 }
               >
@@ -48,16 +47,15 @@ const Navbar = () => {
 
           {/* Utilities */}
           <div className="hidden md:flex items-center space-x-4">
-             <button className={`flex items-center gap-1 text-xs font-semibold ${scrolled ? 'text-slate-600' : 'text-white'}`}>
-               <Globe size={16} /> EN
-             </button>
-             <button className={`px-5 py-2 text-sm font-semibold transition-all ${
-               scrolled 
-               ? 'bg-blue-900 text-white hover:bg-blue-800' 
-               : 'bg-white text-blue-900 hover:bg-gray-100'
-             }`}>
-               Contact Us
-             </button>
+            <button className={`flex items-center gap-1 text-xs font-semibold ${scrolled ? 'text-slate-600' : 'text-white'}`}>
+              <Globe size={16} /> EN
+            </button>
+            <button className={`px-5 py-2 text-sm font-semibold transition-all ${scrolled
+                ? 'bg-blue-900 text-white hover:bg-blue-800'
+                : 'bg-white text-blue-900 hover:bg-gray-100'
+              }`}>
+              Contact Us
+            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -72,7 +70,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white absolute w-full h-screen top-0 left-0 pt-20 px-6">
-           <div className="flex flex-col space-y-6">
+          <div className="flex flex-col space-y-6">
             {NAV_ITEMS.map((item) => (
               <NavLink
                 key={item.path}
@@ -83,10 +81,10 @@ const Navbar = () => {
                 {item.label}
               </NavLink>
             ))}
-             <button className="mt-8 w-full py-4 bg-blue-900 text-white font-bold text-lg">
-               Contact Us
-             </button>
-           </div>
+            <button className="mt-8 w-full py-4 bg-blue-900 text-white font-bold text-lg">
+              Contact Us
+            </button>
+          </div>
         </div>
       )}
     </nav>
@@ -99,11 +97,11 @@ const Footer = () => (
       <div className="col-span-1">
         <h3 className="text-2xl font-bold mb-4">HENGKANG</h3>
         <p className="text-slate-400 text-sm leading-relaxed">
-          Leading Beyond Chemistry.<br/>
+          Leading Beyond Chemistry.<br />
           Innovating for a sustainable future through advanced specialty chemicals and materials.
         </p>
       </div>
-      
+
       <div>
         <h4 className="text-sm font-bold uppercase tracking-wider text-slate-500 mb-6">Markets</h4>
         <ul className="space-y-3 text-sm text-slate-300">
@@ -125,24 +123,30 @@ const Footer = () => (
       </div>
 
       <div>
-        <h4 className="text-sm font-bold uppercase tracking-wider text-slate-500 mb-6">Connect</h4>
-        <div className="flex flex-col space-y-4">
-           <input 
-             type="email" 
-             placeholder="Subscribe to our newsletter" 
-             className="bg-slate-800 border border-slate-700 p-3 text-sm focus:outline-none focus:border-purple-500"
-           />
-           <div className="flex space-x-4 mt-2">
-             {/* Social placeholders */}
-             <div className="w-8 h-8 bg-slate-700 rounded-full hover:bg-purple-600 transition-colors"></div>
-             <div className="w-8 h-8 bg-slate-700 rounded-full hover:bg-purple-600 transition-colors"></div>
-             <div className="w-8 h-8 bg-slate-700 rounded-full hover:bg-purple-600 transition-colors"></div>
-           </div>
-        </div>
+        <h4 className="text-sm font-bold uppercase tracking-wider text-slate-500 mb-6">Contact Us</h4>
+        <ul className="space-y-3 text-sm text-slate-300">
+          <li className="flex flex-col">
+            <span className="text-slate-500 text-xs">Sales Dept.</span>
+            <span className="hover:text-purple-400">0951-8533386</span>
+          </li>
+          <li className="flex flex-col">
+            <span className="text-slate-500 text-xs">Purchasing Dept.</span>
+            <span className="hover:text-purple-400">0951-8533357</span>
+          </li>
+          <li className="flex flex-col">
+            <span className="text-slate-500 text-xs">Recruitment</span>
+            <span className="hover:text-purple-400">0951-8533356</span>
+          </li>
+          <li className="mt-4 text-xs leading-relaxed text-slate-400">
+            Hongsheng East Road,<br />
+            Yinchuan Biological Technology Park,<br />
+            Ningxia, China
+          </li>
+        </ul>
       </div>
     </div>
     <div className="max-w-7xl mx-auto px-4 mt-16 pt-8 border-t border-slate-800 text-xs text-slate-500 flex justify-between">
-      <p>&copy; 2024 Ningxia Hengkang Technology Co., Ltd. All rights reserved.</p>
+      <p>&copy; 2025 Ningxia Hengkang Technology Co., Ltd. All rights reserved.</p>
       <div className="flex space-x-6">
         <a href="#">Privacy Policy</a>
         <a href="#">Terms of Use</a>
