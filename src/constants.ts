@@ -1,12 +1,12 @@
 import { NavItem, Product, NewsArticle, InnovationCase } from './types';
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: 'Home', path: '/' },
-  { label: 'Products', path: '/products' },
-  { label: 'Sustainability', path: '/sustainability' },
-  { label: 'Innovation', path: '/innovation' },
-  { label: 'News', path: '/news' },
-  { label: 'Careers', path: '/careers' },
+  { label: 'Home', labelKey: 'home', path: '/' },
+  { label: 'Products', labelKey: 'products', path: '/products' },
+  { label: 'Sustainability', labelKey: 'sustainability', path: '/sustainability' },
+  { label: 'Innovation', labelKey: 'innovation', path: '/innovation' },
+  { label: 'News', labelKey: 'news', path: '/news' },
+  { label: 'Careers', labelKey: 'careers', path: '/careers' },
 ];
 
 export const PRODUCTS: Product[] = [

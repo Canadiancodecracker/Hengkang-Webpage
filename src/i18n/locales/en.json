@@ -1,0 +1,124 @@
+{
+    "nav": {
+        "home": "Home",
+        "products": "Products",
+        "sustainability": "Sustainability",
+        "innovation": "Innovation",
+        "news": "News",
+        "careers": "Careers",
+        "contactUs": "Contact Us"
+    },
+    "hero": {
+        "since": "Since 2013",
+        "title1": "Innovation in",
+        "title2": "Guanidine Chemistry.",
+        "subtitle": "A high-tech enterprise integrating R&D, production, and sales of pharmaceutical APIs, animal nutrition, and new materials.",
+        "exploreProducts": "Explore Products",
+        "sustainability": "Sustainability"
+    },
+    "home": {
+        "sectionTitle": "Global Leader in",
+        "sectionTitleBold": "Specialty Chemicals.",
+        "sectionDesc": "Located in Ningxia Helan Industrial Park, covering 130,000 square meters, we are dedicated to advancing the field of guanidine salts and pharmaceutical intermediates.",
+        "pharmaTitle": "Pharmaceutical APIs",
+        "pharmaDesc": "World's largest single-line production facility for Metformin Hydrochloride, ensuring global supply stability.",
+        "nutritionTitle": "Animal Nutrition",
+        "nutritionDesc": "High-quality Creatine Monohydrate and GAA improving livestock health and growth performance.",
+        "materialsTitle": "New Materials",
+        "materialsDesc": "Advanced Dicyandiamide (DICY) and curing agents for the next generation of electronic materials.",
+        "qualityTitle": "Quality & Innovation Driven.",
+        "qualityDesc": "We employ advanced processing technology and imported equipment, adhering to GMP quality management systems. Our facility boasts an annual capacity of 12,500 tons of Metformin HCL, 10,000 tons of GAA, and 15,000 tons of Creatine series products.",
+        "stat1": "Square Meters Facility",
+        "stat2": "Registered Capital (CNY)",
+        "stat3": "Employees",
+        "stat4": "Quality Standard",
+        "latestUpdates": "Latest",
+        "latestUpdatesBold": "Updates",
+        "viewNewsCenter": "View News Center",
+        "corporateNews": "Corporate News",
+        "newsTitle": "Advancing the future of specialty chemicals through strategic partnerships.",
+        "rdCenter": "R&D Center",
+        "companyName": "Ningxia Hengkang Technology",
+        "learnMore": "Learn More"
+    },
+    "products": {
+        "title": "Our",
+        "titleBold": "Products",
+        "subtitle": "Innovative solutions across pharmaceuticals, nutrition, and advanced materials",
+        "allCategories": "All Categories",
+        "pharmaceuticals": "Pharmaceuticals",
+        "nutritionalAdditives": "Nutritional Additives",
+        "newMaterials": "New Materials",
+        "applications": "Applications",
+        "viewDetails": "View Details",
+        "metformin": {
+            "name": "Metformin Hydrochloride",
+            "category": "Pharmaceuticals",
+            "description": "High-quality pharmaceutical raw material used primarily for the treatment of type 2 diabetes. Produced in the world's largest single-line production facility.",
+            "app1": "Pharmaceuticals",
+            "app2": "Diabetes Treatment"
+        },
+        "creatine": {
+            "name": "Creatine Monohydrate",
+            "category": "Nutritional Additives",
+            "description": "Premium nutritional supplement widely used in sports nutrition and health products to enhance muscle strength and recovery.",
+            "app1": "Sports Nutrition",
+            "app2": "Health Supplements",
+            "app3": "Food Additives"
+        },
+        "gaa": {
+            "name": "Guanidinoacetic Acid (GAA)",
+            "category": "Nutritional Additives",
+            "description": "A precursor to creatine, used as a highly effective feed additive to improve growth performance in livestock.",
+            "app1": "Animal Feed",
+            "app2": "Livestock Nutrition"
+        },
+        "dicy": {
+            "name": "Epoxy Resin Curing Agent (DICY)",
+            "category": "New Materials",
+            "description": "Super-fine Dicyandiamide used as a latent curing agent for epoxy resins, offering excellent stability and adhesive properties.",
+            "app1": "Electronic Materials",
+            "app2": "Coatings",
+            "app3": "Adhesives",
+            "app4": "Composite Materials"
+        },
+        "accelerator": {
+            "name": "Accelerator",
+            "category": "New Materials",
+            "description": "Specialized chemical accelerator used to speed up reaction processes in various industrial applications.",
+            "app1": "Industrial Processing",
+            "app2": "Chemical Synthesis"
+        },
+        "sodium": {
+            "name": "Sodium Sarcosinate",
+            "category": "New Materials",
+            "description": "An amino acid derivative used in the production of biodegradable surfactants and toothpaste.",
+            "app1": "Surfactants",
+            "app2": "Personal Care",
+            "app3": "Industrial Cleaning"
+        }
+    },
+    "footer": {
+        "tagline": "Leading Beyond Chemistry.",
+        "description": "Innovating for a sustainable future through advanced specialty chemicals and materials.",
+        "markets": "Markets",
+        "animalNutrition": "Animal Nutrition",
+        "pharmaceuticals": "Pharmaceuticals",
+        "construction": "Construction & Infrastructure",
+        "additives": "Additives",
+        "company": "Company",
+        "aboutUs": "About Us",
+        "sustainability": "Sustainability",
+        "careers": "Careers",
+        "press": "Press",
+        "contactUs": "Contact Us",
+        "salesDept": "Sales Dept.",
+        "purchasingDept": "Purchasing Dept.",
+        "recruitment": "Recruitment",
+        "address": "Hongsheng East Road,\nYinchuan Biological Technology Park,\nNingxia, China",
+        "copyright": "© 2025 Ningxia Hengkang Technology Co., Ltd. All rights reserved.",
+        "privacyPolicy": "Privacy Policy",
+        "termsOfUse": "Terms of Use",
+        "imprint": "Imprint"
+    }
+}

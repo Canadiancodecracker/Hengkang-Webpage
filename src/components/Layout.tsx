@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { Menu, X, Globe, ArrowRight, ChevronDown } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { NAV_ITEMS } from '../constants';
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [langMenuOpen, setLangMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,6 +17,13 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+    setLangMenuOpen(false);
+  };
+
+  const currentLang = i18n.language === 'zh' ? '中文' : 'EN';
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-2' : 'bg-transparent py-4 text-white'}`}>
@@ -40,21 +50,42 @@ const Navbar = () => {
                   }`
                 }
               >
-                {item.label}
+                {t(`nav.${item.labelKey}`)}
               </NavLink>
             ))}
           </div>
 
           {/* Utilities */}
           <div className="hidden md:flex items-center space-x-4">
-            <button className={`flex items-center gap-1 text-xs font-semibold ${scrolled ? 'text-slate-600' : 'text-white'}`}>
-              <Globe size={16} /> EN
-            </button>
+            <div className="relative">
+              <button
+                onClick={() => setLangMenuOpen(!langMenuOpen)}
+                className={`flex items-center gap-1 text-xs font-semibold ${scrolled ? 'text-slate-600' : 'text-white'} hover:opacity-80 transition-opacity`}
+              >
+                <Globe size={16} /> {currentLang} <ChevronDown size={14} />
+              </button>
+              {langMenuOpen && (
+                <div className="absolute top-full mt-2 right-0 bg-white shadow-lg rounded-sm overflow-hidden min-w-[100px]">
+                  <button
+                    onClick={() => changeLanguage('en')}
+                    className={`block w-full text-left px-4 py-2 text-sm hover:bg-purple-50 ${i18n.language === 'en' ? 'bg-purple-100 text-purple-700 font-bold' : 'text-slate-700'}`}
+                  >
+                    English
+                  </button>
+                  <button
+                    onClick={() => changeLanguage('zh')}
+                    className={`block w-full text-left px-4 py-2 text-sm hover:bg-purple-50 ${i18n.language === 'zh' ? 'bg-purple-100 text-purple-700 font-bold' : 'text-slate-700'}`}
+                  >
+                    中文
+                  </button>
+                </div>
+              )}
+            </div>
             <button className={`px-5 py-2 text-sm font-semibold transition-all ${scrolled
-                ? 'bg-blue-900 text-white hover:bg-blue-800'
-                : 'bg-white text-blue-900 hover:bg-gray-100'
+              ? 'bg-blue-900 text-white hover:bg-blue-800'
+              : 'bg-white text-blue-900 hover:bg-gray-100'
               }`}>
-              Contact Us
+              {t('nav.contactUs')}
             </button>
           </div>
 
@@ -78,11 +109,25 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className="text-2xl font-light text-slate-800 border-b border-gray-100 pb-2"
               >
-                {item.label}
+                {t(`nav.${item.labelKey}`)}
               </NavLink>
             ))}
+            <div className="flex gap-3 mt-4">
+              <button
+                onClick={() => changeLanguage('en')}
+                className={`flex-1 py-2 text-sm font-semibold ${i18n.language === 'en' ? 'bg-purple-600 text-white' : 'bg-slate-200 text-slate-700'}`}
+              >
+                English
+              </button>
+              <button
+                onClick={() => changeLanguage('zh')}
+                className={`flex-1 py-2 text-sm font-semibold ${i18n.language === 'zh' ? 'bg-purple-600 text-white' : 'bg-slate-200 text-slate-700'}`}
+              >
+                中文
+              </button>
+            </div>
             <button className="mt-8 w-full py-4 bg-blue-900 text-white font-bold text-lg">
-              Contact Us
+              {t('nav.contactUs')}
             </button>
           </div>
         </div>
@@ -91,70 +136,72 @@ const Navbar = () => {
   );
 };
 
-const Footer = () => (
-  <footer className="bg-slate-900 text-white py-16">
-    <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
-      <div className="col-span-1">
-        <h3 className="text-2xl font-bold mb-4">HENGKANG</h3>
-        <p className="text-slate-400 text-sm leading-relaxed">
-          Leading Beyond Chemistry.<br />
-          Innovating for a sustainable future through advanced specialty chemicals and materials.
-        </p>
-      </div>
+const Footer = () => {
+  const { t } = useTranslation();
 
-      <div>
-        <h4 className="text-sm font-bold uppercase tracking-wider text-slate-500 mb-6">Markets</h4>
-        <ul className="space-y-3 text-sm text-slate-300">
-          <li><a href="#" className="hover:text-purple-400">Animal Nutrition</a></li>
-          <li><a href="#" className="hover:text-purple-400">Pharmaceuticals</a></li>
-          <li><a href="#" className="hover:text-purple-400">Construction & Infrastructure</a></li>
-          <li><a href="#" className="hover:text-purple-400">Additives</a></li>
-        </ul>
-      </div>
+  return (
+    <footer className="bg-slate-900 text-white py-16">
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="col-span-1">
+          <h3 className="text-2xl font-bold mb-4">HENGKANG</h3>
+          <p className="text-slate-400 text-sm leading-relaxed">
+            {t('footer.tagline')}<br />
+            {t('footer.description')}
+          </p>
+        </div>
 
-      <div>
-        <h4 className="text-sm font-bold uppercase tracking-wider text-slate-500 mb-6">Company</h4>
-        <ul className="space-y-3 text-sm text-slate-300">
-          <li><a href="#" className="hover:text-purple-400">About Us</a></li>
-          <li><a href="#" className="hover:text-purple-400">Sustainability</a></li>
-          <li><a href="#" className="hover:text-purple-400">Careers</a></li>
-          <li><a href="#" className="hover:text-purple-400">Press</a></li>
-        </ul>
-      </div>
+        <div>
+          <h4 className="text-sm font-bold uppercase tracking-wider text-slate-500 mb-6">{t('footer.markets')}</h4>
+          <ul className="space-y-3 text-sm text-slate-300">
+            <li><a href="#" className="hover:text-purple-400">{t('footer.animalNutrition')}</a></li>
+            <li><a href="#" className="hover:text-purple-400">{t('footer.pharmaceuticals')}</a></li>
+            <li><a href="#" className="hover:text-purple-400">{t('footer.construction')}</a></li>
+            <li><a href="#" className="hover:text-purple-400">{t('footer.additives')}</a></li>
+          </ul>
+        </div>
 
-      <div>
-        <h4 className="text-sm font-bold uppercase tracking-wider text-slate-500 mb-6">Contact Us</h4>
-        <ul className="space-y-3 text-sm text-slate-300">
-          <li className="flex flex-col">
-            <span className="text-slate-500 text-xs">Sales Dept.</span>
-            <span className="hover:text-purple-400">0951-8533386</span>
-          </li>
-          <li className="flex flex-col">
-            <span className="text-slate-500 text-xs">Purchasing Dept.</span>
-            <span className="hover:text-purple-400">0951-8533357</span>
-          </li>
-          <li className="flex flex-col">
-            <span className="text-slate-500 text-xs">Recruitment</span>
-            <span className="hover:text-purple-400">0951-8533356</span>
-          </li>
-          <li className="mt-4 text-xs leading-relaxed text-slate-400">
-            Hongsheng East Road,<br />
-            Yinchuan Biological Technology Park,<br />
-            Ningxia, China
-          </li>
-        </ul>
+        <div>
+          <h4 className="text-sm font-bold uppercase tracking-wider text-slate-500 mb-6">{t('footer.company')}</h4>
+          <ul className="space-y-3 text-sm text-slate-300">
+            <li><a href="#" className="hover:text-purple-400">{t('footer.aboutUs')}</a></li>
+            <li><a href="#" className="hover:text-purple-400">{t('footer.sustainability')}</a></li>
+            <li><a href="#" className="hover:text-purple-400">{t('footer.careers')}</a></li>
+            <li><a href="#" className="hover:text-purple-400">{t('footer.press')}</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="text-sm font-bold uppercase tracking-wider text-slate-500 mb-6">{t('footer.contactUs')}</h4>
+          <ul className="space-y-3 text-sm text-slate-300">
+            <li className="flex flex-col">
+              <span className="text-slate-500 text-xs">{t('footer.salesDept')}</span>
+              <span className="hover:text-purple-400">0951-8533386</span>
+            </li>
+            <li className="flex flex-col">
+              <span className="text-slate-500 text-xs">{t('footer.purchasingDept')}</span>
+              <span className="hover:text-purple-400">0951-8533357</span>
+            </li>
+            <li className="flex flex-col">
+              <span className="text-slate-500 text-xs">{t('footer.recruitment')}</span>
+              <span className="hover:text-purple-400">0951-8533356</span>
+            </li>
+            <li className="mt-4 text-xs leading-relaxed text-slate-400 whitespace-pre-line">
+              {t('footer.address')}
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div className="max-w-7xl mx-auto px-4 mt-16 pt-8 border-t border-slate-800 text-xs text-slate-500 flex justify-between">
-      <p>&copy; 2025 Ningxia Hengkang Technology Co., Ltd. All rights reserved.</p>
-      <div className="flex space-x-6">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
-        <a href="#">Imprint</a>
+      <div className="max-w-7xl mx-auto px-4 mt-16 pt-8 border-t border-slate-800 text-xs text-slate-500 flex justify-between">
+        <p>{t('footer.copyright')}</p>
+        <div className="flex space-x-6">
+          <a href="#">{t('footer.privacyPolicy')}</a>
+          <a href="#">{t('footer.termsOfUse')}</a>
+          <a href="#">{t('footer.imprint')}</a>
+        </div>
       </div>
-    </div>
-  </footer>
-);
+    </footer>
+  );
+};
 
 export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (

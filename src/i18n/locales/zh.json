@@ -1,0 +1,124 @@
+{
+    "nav": {
+        "home": "首页",
+        "products": "产品中心",
+        "sustainability": "可持续发展",
+        "innovation": "创新研发",
+        "news": "新闻中心",
+        "careers": "人才招聘",
+        "contactUs": "联系我们"
+    },
+    "hero": {
+        "since": "始于2013年",
+        "title1": "胍盐化学",
+        "title2": "创新领航",
+        "subtitle": "集研发、生产、销售于一体的高新技术企业，专注于医药原料药、动物营养和新材料领域。",
+        "exploreProducts": "探索产品",
+        "sustainability": "可持续发展"
+    },
+    "home": {
+        "sectionTitle": "全球领先的",
+        "sectionTitleBold": "精细化工企业",
+        "sectionDesc": "位于宁夏贺兰工业园区，占地面积13万平方米，致力于推动胍盐及医药中间体领域的发展。",
+        "pharmaTitle": "医药原料药",
+        "pharmaDesc": "全球最大的单线盐酸二甲双胍生产设施，确保全球供应稳定。",
+        "nutritionTitle": "动物营养",
+        "nutritionDesc": "高品质一水肌酸和胍基乙酸，改善畜禽健康和生长性能。",
+        "materialsTitle": "新材料",
+        "materialsDesc": "先进的双氰胺（DICY）和固化剂，应用于下一代电子材料。",
+        "qualityTitle": "质量与创新驱动",
+        "qualityDesc": "我们采用先进的加工技术和进口设备，严格遵守GMP质量管理体系。我们的工厂年产能为：盐酸二甲双胍12,500吨、胍基乙酸10,000吨、肌酸系列产品15,000吨。",
+        "stat1": "厂区面积（平方米）",
+        "stat2": "注册资本（人民币）",
+        "stat3": "员工人数",
+        "stat4": "质量标准",
+        "latestUpdates": "最新",
+        "latestUpdatesBold": "动态",
+        "viewNewsCenter": "查看新闻中心",
+        "corporateNews": "企业新闻",
+        "newsTitle": "通过战略合作推动精细化工的未来发展。",
+        "rdCenter": "研发中心",
+        "companyName": "宁夏恒康科技有限公司",
+        "learnMore": "了解更多"
+    },
+    "products": {
+        "title": "我们的",
+        "titleBold": "产品",
+        "subtitle": "涵盖医药、营养和先进材料领域的创新解决方案",
+        "allCategories": "全部分类",
+        "pharmaceuticals": "医药原料药",
+        "nutritionalAdditives": "营养添加剂",
+        "newMaterials": "新材料",
+        "applications": "应用领域",
+        "viewDetails": "查看详情",
+        "metformin": {
+            "name": "盐酸二甲双胍",
+            "category": "医药原料药",
+            "description": "高品质医药原料，主要用于治疗2型糖尿病。在全球最大的单线生产设施中生产。",
+            "app1": "医药制品",
+            "app2": "糖尿病治疗"
+        },
+        "creatine": {
+            "name": "一水肌酸",
+            "category": "营养添加剂",
+            "description": "优质营养补充剂，广泛应用于运动营养和健康产品，增强肌肉力量和恢复能力。",
+            "app1": "运动营养",
+            "app2": "健康补充剂",
+            "app3": "食品添加剂"
+        },
+        "gaa": {
+            "name": "胍基乙酸（GAA）",
+            "category": "营养添加剂",
+            "description": "肌酸的前体物质，作为高效饲料添加剂，改善畜禽生长性能。",
+            "app1": "动物饲料",
+            "app2": "畜禽营养"
+        },
+        "dicy": {
+            "name": "环氧树脂固化剂（DICY）",
+            "category": "新材料",
+            "description": "超细双氰胺，用作环氧树脂的潜伏性固化剂，具有优异的稳定性和粘合性能。",
+            "app1": "电子材料",
+            "app2": "涂料",
+            "app3": "胶粘剂",
+            "app4": "复合材料"
+        },
+        "accelerator": {
+            "name": "促进剂",
+            "category": "新材料",
+            "description": "专业化学促进剂，用于加速各种工业应用中的反应过程。",
+            "app1": "工业加工",
+            "app2": "化学合成"
+        },
+        "sodium": {
+            "name": "肌氨酸钠",
+            "category": "新材料",
+            "description": "氨基酸衍生物，用于生产可生物降解的表面活性剂和牙膏。",
+            "app1": "表面活性剂",
+            "app2": "个人护理",
+            "app3": "工业清洁"
+        }
+    },
+    "footer": {
+        "tagline": "超越化学，引领未来",
+        "description": "通过先进的精细化工和材料创新，为可持续发展的未来而努力。",
+        "markets": "市场领域",
+        "animalNutrition": "动物营养",
+        "pharmaceuticals": "医药制品",
+        "construction": "建筑与基础设施",
+        "additives": "添加剂",
+        "company": "公司信息",
+        "aboutUs": "关于我们",
+        "sustainability": "可持续发展",
+        "careers": "人才招聘",
+        "press": "新闻媒体",
+        "contactUs": "联系我们",
+        "salesDept": "销售部",
+        "purchasingDept": "采购部",
+        "recruitment": "人力资源部",
+        "address": "宁夏银川生物科技园\n红胜东路\n中国宁夏",
+        "copyright": "© 2025 宁夏恒康科技有限公司 版权所有",
+        "privacyPolicy": "隐私政策",
+        "termsOfUse": "使用条款",
+        "imprint": "法律声明"
+    }
+}
