@@ -31,11 +31,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer">
-            <div className={`w-8 h-8 ${scrolled ? 'bg-blue-900' : 'bg-white'} rounded-sm`}></div>
-            <span className={`text-xl font-bold tracking-tight ${scrolled ? 'text-slate-900' : 'text-white'}`}>
-              HENGKANG
-            </span>
+          <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer" onClick={() => navigate('/')}>
+            <img
+              src="/Hengkang-Webpage/assets/images/logo.png"
+              alt="Hengkang Technology"
+              className="h-10 w-auto"
+            />
           </div>
 
           {/* Desktop Nav */}
@@ -151,7 +152,11 @@ const Footer = () => {
     <footer className="bg-slate-900 text-white py-16">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="col-span-1">
-          <h3 className="text-2xl font-bold mb-4">HENGKANG</h3>
+          <img
+            src="/Hengkang-Webpage/assets/images/logo.png"
+            alt="Hengkang Technology"
+            className="h-12 w-auto mb-4"
+          />
           <p className="text-slate-400 text-sm leading-relaxed">
             {t('footer.tagline')}<br />
             {t('footer.description')}
