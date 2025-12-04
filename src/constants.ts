@@ -1,4 +1,4 @@
-import { NavItem, Product, NewsArticle, InnovationCase } from './types';
+import { NavItem, Product, NewsArticle, InnovationCase, JobPosting } from './types';
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', labelKey: 'home', path: '/' },
@@ -116,6 +116,72 @@ export const NEWS: NewsArticle[] = [
     summary: 'The annual output of 5,000 tons of creatine production project has passed environmental protection acceptance.',
     summaryKey: 'news5Summary',
     image: '/Hengkang-Webpage/assets/images/news_env.jpg'
+  },
+  {
+    id: 'n6',
+    title: 'Metformin Project EIA Draft Public Notice',
+    titleKey: 'news6Title',
+    date: 'May 27, 2021',
+    category: 'Company News',
+    categoryKey: 'companyNews',
+    summary: 'Public notice for the draft environmental impact assessment report of the 15,000 tons Metformin project.',
+    summaryKey: 'news6Summary',
+    image: '/Hengkang-Webpage/assets/images/news_project.jpg'
+  },
+  {
+    id: 'n7',
+    title: 'Metformin Project EIA First Public Notice',
+    titleKey: 'news7Title',
+    date: 'Apr 06, 2021',
+    category: 'Company News',
+    categoryKey: 'companyNews',
+    summary: 'First public notice regarding the environmental impact assessment of the 15,000 tons Metformin project.',
+    summaryKey: 'news7Summary',
+    image: '/Hengkang-Webpage/assets/images/news_project.jpg'
+  },
+  {
+    id: 'n8',
+    title: '1500 Tons BBA Tech Transformation Project',
+    titleKey: 'news8Title',
+    date: 'Mar 18, 2019',
+    category: 'Company News',
+    categoryKey: 'companyNews',
+    summary: 'Environmental impact assessment draft notice for the 1500 tons BBA technical transformation project.',
+    summaryKey: 'news8Summary',
+    image: '/Hengkang-Webpage/assets/images/news_tech.jpg'
+  },
+  {
+    id: 'n9',
+    title: 'Water Pollutant Monitoring Acceptance',
+    titleKey: 'news9Title',
+    date: 'Jul 06, 2018',
+    category: 'Environmental',
+    categoryKey: 'environmental',
+    summary: 'Public notice of the acceptance opinion for the comparison monitoring of online water pollutant monitoring equipment.',
+    summaryKey: 'news9Summary',
+    image: '/Hengkang-Webpage/assets/images/news_env.jpg'
+  },
+  {
+    id: 'n10',
+    title: 'Strengthen Supervision of Pharma Enterprises',
+    titleKey: 'news10Title',
+    date: 'Mar 17, 2017',
+    category: 'Industry News',
+    categoryKey: 'industryNews',
+    summary: 'Strengthening supervision of pharmaceutical and bio-fermentation enterprises and urging rectification of odor issues.',
+    summaryKey: 'news10Summary',
+    image: '/Hengkang-Webpage/assets/images/news_industry.jpg'
+  },
+  {
+    id: 'n11',
+    title: 'Interpretation of Complaint Management Measures',
+    titleKey: 'news11Title',
+    date: 'Feb 15, 2017',
+    category: 'Industry News',
+    categoryKey: 'industryNews',
+    summary: 'Interpretation of issues related to the Measures for the Administration of Food and Drug Complaints and Reports.',
+    summaryKey: 'news11Summary',
+    image: '/Hengkang-Webpage/assets/images/news_industry.jpg'
   }
 ];
 
@@ -140,5 +206,67 @@ export const INNOVATIONS: InnovationCase[] = [
     area: 'Construction Tech',
     description: 'Integrating additives that react to stress, signaling structural integrity issues.',
     image: 'https://picsum.photos/600/400?random=22'
+  }
+];
+
+export const JOB_POSTINGS: JobPosting[] = [
+  {
+    id: 'j1',
+    title: 'Operator',
+    titleKey: 'job1Title',
+    count: 5,
+    salary: '5500-6500 RMB/month',
+    type: 'Shift work',
+    requirements: [
+      'High school degree or above, chemical related major',
+      'Age under 40, able to adapt to shift work',
+      'Experience in chemical enterprises is preferred'
+    ],
+    benefits: [
+      'Social insurance and housing fund',
+      'Free dormitory and meals',
+      'Free shuttle bus',
+      'Various subsidies (night shift, high temp, etc.)'
+    ],
+    contact: '0951-8533356'
+  },
+  {
+    id: 'j2',
+    title: 'Forklift Driver',
+    titleKey: 'job2Title',
+    count: 1,
+    salary: '5000-5500 RMB/month',
+    type: 'Normal shift',
+    requirements: [
+      'High school degree or above',
+      'Male, age under 40',
+      'Valid forklift license, 3+ years experience'
+    ],
+    benefits: [
+      'Social insurance and housing fund',
+      'Free dormitory and meals',
+      'Free shuttle bus'
+    ],
+    contact: '0951-8533356'
+  },
+  {
+    id: 'j3',
+    title: 'Finished Product Warehouse Keeper',
+    titleKey: 'job3Title',
+    count: 1,
+    salary: '5000-5500 RMB/month',
+    type: 'Normal shift',
+    requirements: [
+      'College degree or above',
+      'Familiar with office software and ERP (U8, NC)',
+      'Age under 40',
+      '1+ year warehouse experience in chemical enterprise'
+    ],
+    benefits: [
+      'Social insurance and housing fund',
+      'Free dormitory and meals',
+      'Free shuttle bus'
+    ],
+    contact: '0951-8533356'
   }
 ];

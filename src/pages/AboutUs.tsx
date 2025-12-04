@@ -146,6 +146,45 @@ export const AboutUs = () => {
                 </div>
             </section>
 
+            {/* Qualifications & Honors */}
+            <section className="py-20 bg-white">
+                <div className="max-w-7xl mx-auto px-4">
+                    <h2 className="text-3xl font-light text-center mb-16">
+                        {t('about.qualificationsTitle')}
+                    </h2>
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        {['license', 'ccpit', 'specialized', 'engineeringCenter', 'techSME'].map((item) => (
+                            <div key={item} className="p-6 bg-slate-50 border border-slate-100 rounded-lg text-center hover:shadow-md transition-shadow">
+                                <Award className="text-purple-600 mx-auto mb-4" size={32} />
+                                <div className="font-medium text-slate-800">{t(`about.${item}`)}</div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Factory Environment */}
+            <section className="py-20 bg-slate-50">
+                <div className="max-w-7xl mx-auto px-4">
+                    <h2 className="text-3xl font-light text-center mb-16">
+                        {t('about.factoryTitle')}
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {['factoryPanorama', 'rdEquipment', 'controlRoom', 'lab'].map((item) => (
+                            <div key={item} className="group relative overflow-hidden rounded-lg h-64 bg-slate-200">
+                                {/* Placeholder for image */}
+                                <div className="absolute inset-0 flex items-center justify-center text-slate-400 bg-slate-200">
+                                    <Factory size={48} className="opacity-20" />
+                                </div>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                                    <div className="text-white font-bold">{t(`about.${item}`)}</div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             {/* Production Capacity */}
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4">

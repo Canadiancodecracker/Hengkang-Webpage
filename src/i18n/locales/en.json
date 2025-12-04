@@ -133,7 +133,19 @@
         "capacity1": "Metformin Hydrochloride (tons/year)",
         "capacity2": "Guanidinoacetic Acid (GAA) (tons/year)",
         "capacity3": "Creatine Series (tons/year)",
-        "capacity4": "Epoxy Resin Curing Agent (tons/year)"
+        "capacity4": "Epoxy Resin Curing Agent (tons/year)",
+        "qualificationsTitle": "Qualifications & Honors",
+        "factoryTitle": "Factory Environment",
+        "employeesTitle": "Employee Showcase",
+        "license": "Business License",
+        "ccpit": "CCPIT Export Brand Certificate",
+        "specialized": "Specialized and Innovative Enterprise",
+        "engineeringCenter": "Engineering Research Center",
+        "techSME": "Tech-based SME",
+        "factoryPanorama": "Company Panorama",
+        "rdEquipment": "R&D Equipment",
+        "controlRoom": "Control Room",
+        "lab": "Laboratory"
     },
     "contact": {
         "title": "Contact Us",
@@ -168,7 +180,19 @@
         "news4Title": "Erythromycin Technical Transformation Project",
         "news4Summary": "Investment project for the technical transformation of 200 tons annual output of Erythromycin. This upgrade will improve efficiency and reduce environmental impact.",
         "news5Title": "Environmental Acceptance of Creatine Project",
-        "news5Summary": "The annual output of 5,000 tons of creatine production project has passed environmental protection acceptance, marking a significant milestone in our sustainable development."
+        "news5Summary": "The annual output of 5,000 tons of creatine production project has passed environmental protection acceptance, marking a significant milestone in our sustainable development.",
+        "news6Title": "Metformin Project EIA Draft Public Notice",
+        "news6Summary": "Public notice for the draft environmental impact assessment report of the 15,000 tons Metformin project.",
+        "news7Title": "Metformin Project EIA First Public Notice",
+        "news7Summary": "First public notice regarding the environmental impact assessment of the 15,000 tons Metformin project.",
+        "news8Title": "1500 Tons BBA Tech Transformation Project",
+        "news8Summary": "Environmental impact assessment draft notice for the 1500 tons BBA technical transformation project.",
+        "news9Title": "Water Pollutant Monitoring Acceptance",
+        "news9Summary": "Public notice of the acceptance opinion for the comparison monitoring of online water pollutant monitoring equipment.",
+        "news10Title": "Strengthen Supervision of Pharma Enterprises",
+        "news10Summary": "Strengthening supervision of pharmaceutical and bio-fermentation enterprises and urging rectification of odor issues.",
+        "news11Title": "Interpretation of Complaint Management Measures",
+        "news11Summary": "Interpretation of issues related to the Measures for the Administration of Food and Drug Complaints and Reports."
     },
     "sustainability": {
         "heroLabel": "Responsibility",
@@ -218,7 +242,15 @@
         "value4Desc": "Ensuring the well-being and safety of every employee.",
         "joinTitle": "Ready to make an impact?",
         "joinDesc": "We are always looking for talented individuals to join our team. If you are passionate about chemistry and innovation, we want to hear from you.",
-        "contactHr": "Contact HR Department"
+        "contactHr": "Contact HR Department",
+        "job1Title": "Operator",
+        "job2Title": "Forklift Driver",
+        "job3Title": "Finished Product Warehouse Keeper",
+        "openPositions": "Open Positions",
+        "applyNow": "Apply Now",
+        "requirements": "Requirements",
+        "benefits": "Benefits",
+        "contact": "Contact"
     },
     "footer": {
         "tagline": "Leading Beyond Chemistry.",

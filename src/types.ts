@@ -38,3 +38,15 @@ export interface InnovationCase {
   description: string;
   image: string;
 }
+
+export interface JobPosting {
+  id: string;
+  title: string;
+  titleKey: string;
+  count: number;
+  salary: string;
+  type: string; // e.g. Shift work, Normal shift
+  requirements: string[];
+  benefits: string[];
+  contact: string;
+}
