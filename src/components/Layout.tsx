@@ -35,10 +35,9 @@ const Navbar = () => {
             <img
               src="/Hengkang-Webpage/assets/images/logo.png"
               alt="Hengkang Technology"
-              className="h-10 w-auto"
+              className={`h-10 w-auto ${scrolled ? 'bg-white' : ''}`}
               style={{
-                mixBlendMode: scrolled ? 'multiply' : 'screen',
-                filter: scrolled ? 'none' : 'brightness(1.2)'
+                backgroundColor: scrolled ? 'white' : 'rgba(51, 65, 85, 0.9)'
               }}
             />
           </div>
@@ -160,7 +159,7 @@ const Footer = () => {
             src="/Hengkang-Webpage/assets/images/logo.png"
             alt="Hengkang Technology"
             className="h-12 w-auto mb-4"
-            style={{ mixBlendMode: 'screen' }}
+            style={{ backgroundColor: 'rgb(15, 23, 42)' }}
           />
           <p className="text-slate-400 text-sm leading-relaxed">
             {t('footer.tagline')}<br />
