@@ -6,6 +6,7 @@ import { NAV_ITEMS } from '../constants';
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [langMenuOpen, setLangMenuOpen] = useState(false);
@@ -81,10 +82,12 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            <button className={`px-5 py-2 text-sm font-semibold transition-all ${scrolled
-              ? 'bg-blue-900 text-white hover:bg-blue-800'
-              : 'bg-white text-blue-900 hover:bg-gray-100'
-              }`}>
+            <button
+              onClick={() => navigate('/contact')}
+              className={`px-5 py-2 text-sm font-semibold transition-all ${scrolled
+                ? 'bg-blue-900 text-white hover:bg-blue-800'
+                : 'bg-white text-blue-900 hover:bg-gray-100'
+                }`}>
               {t('nav.contactUs')}
             </button>
           </div>
@@ -126,7 +129,12 @@ const Navbar = () => {
                 中文
               </button>
             </div>
-            <button className="mt-8 w-full py-4 bg-blue-900 text-white font-bold text-lg">
+            <button
+              onClick={() => {
+                navigate('/contact');
+                setIsOpen(false);
+              }}
+              className="mt-8 w-full py-4 bg-blue-900 text-white font-bold text-lg">
               {t('nav.contactUs')}
             </button>
           </div>

@@ -2,16 +2,13 @@ import React from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import { Home } from './pages/Home';
+import { AboutUs } from './pages/AboutUs';
 import { Products } from './pages/Products';
 import { Sustainability } from './pages/Sustainability';
-
-// Placeholder components for sections not fully fleshed out in this demo but required by router
-const PlaceholderPage = ({ title }: { title: string }) => (
-  <div className="pt-32 pb-20 max-w-7xl mx-auto px-4 min-h-screen">
-    <h1 className="text-4xl font-bold mb-4">{title}</h1>
-    <p className="text-slate-500">This section is under construction for the demo.</p>
-  </div>
-);
+import { Contact } from './pages/Contact';
+import { News } from './pages/News';
+import { Innovation } from './pages/Innovation';
+import { Careers } from './pages/Careers';
 
 const App = () => {
   return (
@@ -19,11 +16,13 @@ const App = () => {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutUs />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/news" element={<News />} />
           <Route path="/sustainability" element={<Sustainability />} />
-          <Route path="/innovation" element={<PlaceholderPage title="Technical Innovation" />} />
-          <Route path="/news" element={<PlaceholderPage title="News Center" />} />
-          <Route path="/careers" element={<PlaceholderPage title="Careers & Culture" />} />
+          <Route path="/innovation" element={<Innovation />} />
+          <Route path="/careers" element={<Careers />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Layout>

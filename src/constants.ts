@@ -2,6 +2,7 @@ import { NavItem, Product, NewsArticle, InnovationCase } from './types';
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', labelKey: 'home', path: '/' },
+  { label: 'About Us', labelKey: 'aboutUs', path: '/about' },
   { label: 'Products', labelKey: 'products', path: '/products' },
   { label: 'Sustainability', labelKey: 'sustainability', path: '/sustainability' },
   { label: 'Innovation', labelKey: 'innovation', path: '/innovation' },
@@ -63,27 +64,58 @@ export const PRODUCTS: Product[] = [
 export const NEWS: NewsArticle[] = [
   {
     id: 'n1',
-    title: 'Hengkang Launches Net-Zero Initiative 2030',
-    date: 'Oct 24, 2023',
-    category: 'Sustainability',
-    summary: 'A bold new roadmap to reduce carbon emissions across all manufacturing plants by 50% within the next decade.',
-    image: 'https://picsum.photos/800/400?random=10'
+    title: 'Common Food Additives in Ten Foods',
+    titleKey: 'news1Title',
+    date: 'Nov 22, 2022',
+    category: 'Industry News',
+    categoryKey: 'industryNews',
+    summary: 'What are food additives? They are substances added to food to preserve flavor or enhance taste, appearance, etc.',
+    summaryKey: 'news1Summary',
+    image: '/Hengkang-Webpage/assets/images/news_additives.jpg'
   },
   {
     id: 'n2',
-    title: 'Expansion of R&D Center in Ningxia',
-    date: 'Sep 15, 2023',
-    category: 'Corporate',
-    summary: 'Our new state-of-the-art facility will focus on bio-based polymer research.',
-    image: 'https://picsum.photos/800/400?random=11'
+    title: 'Basic Situation of Ningxia Hengkang Technology',
+    titleKey: 'news2Title',
+    date: 'Dec 07, 2021',
+    category: 'Company News',
+    categoryKey: 'companyNews',
+    summary: 'Established in 2013, located in Helan Industrial Park, Hengkang Technology is a leading enterprise in the region.',
+    summaryKey: 'news2Summary',
+    image: '/Hengkang-Webpage/assets/images/news_company.jpg'
   },
   {
     id: 'n3',
-    title: 'Q3 Financial Results: Strong Growth in Pharma',
-    date: 'Aug 01, 2023',
-    category: 'Financial',
-    summary: 'Pharmaceutical additives division sees a 15% year-over-year revenue increase.',
-    image: 'https://picsum.photos/800/400?random=12'
+    title: 'Annual Output of 15,000 Tons of Metformin Hydrochloride Project',
+    titleKey: 'news3Title',
+    date: 'Sep 02, 2021',
+    category: 'Company News',
+    categoryKey: 'companyNews',
+    summary: 'Public participation in environmental impact assessment for the new major production line project.',
+    summaryKey: 'news3Summary',
+    image: '/Hengkang-Webpage/assets/images/news_project.jpg'
+  },
+  {
+    id: 'n4',
+    title: 'Erythromycin Technical Transformation Project',
+    titleKey: 'news4Title',
+    date: 'Jan 28, 2021',
+    category: 'Company News',
+    categoryKey: 'companyNews',
+    summary: 'Investment project for the technical transformation of 200 tons annual output of Erythromycin.',
+    summaryKey: 'news4Summary',
+    image: '/Hengkang-Webpage/assets/images/news_tech.jpg'
+  },
+  {
+    id: 'n5',
+    title: 'Environmental Acceptance of Creatine Project',
+    titleKey: 'news5Title',
+    date: 'Sep 10, 2018',
+    category: 'Environmental',
+    categoryKey: 'environmental',
+    summary: 'The annual output of 5,000 tons of creatine production project has passed environmental protection acceptance.',
+    summaryKey: 'news5Summary',
+    image: '/Hengkang-Webpage/assets/images/news_env.jpg'
   }
 ];
 

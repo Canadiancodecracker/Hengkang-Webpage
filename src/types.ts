@@ -16,9 +16,12 @@ export interface Product {
 export interface NewsArticle {
   id: string;
   title: string;
+  titleKey?: string; // Optional for now to avoid breaking existing code immediately
   date: string;
   category: string;
+  categoryKey?: string;
   summary: string;
+  summaryKey?: string;
   image: string;
 }
 
