@@ -35,7 +35,7 @@ const Navbar = () => {
             <img
               src="/Hengkang-Webpage/assets/images/logo.png"
               alt="Hengkang Technology"
-              className="h-12 w-auto"
+              className={`h-12 w-auto transition-all duration-300 ${!scrolled ? 'brightness-0 invert' : ''}`}
             />
           </div>
 
@@ -155,7 +155,7 @@ const Footer = () => {
           <img
             src="/Hengkang-Webpage/assets/images/logo.png"
             alt="Hengkang Technology"
-            className="h-14 w-auto mb-4"
+            className="h-14 w-auto mb-4 brightness-0 invert"
           />
           <p className="text-slate-400 text-sm leading-relaxed">
             {t('footer.tagline')}<br />
