@@ -32,23 +32,10 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer" onClick={() => navigate('/')}>
-            {/* Logic: 
-                - Start with solid logo.png (White BG, Dark Text)
-                - !scrolled (Dark BG): 
-                  1. invert: BG->Black, Text->Light
-                  2. grayscale: Remove weird inverted colors
-                  3. brightness(10): Make text pure white
-                  4. mix-blend-screen: Hide Black BG
-                - scrolled (White BG):
-                  1. mix-blend-multiply: Hide White BG
-             */}
             <img
-              src="/Hengkang-Webpage/assets/images/logo.png"
+              src={!scrolled ? "/Hengkang-Webpage/assets/images/logo_white_clean.png" : "/Hengkang-Webpage/assets/images/logo_color_clean.png"}
               alt="Hengkang Technology"
-              className={`h-12 w-auto transition-all duration-300 ${!scrolled
-                ? 'mix-blend-screen invert grayscale brightness-[100] contrast-[100]'
-                : 'mix-blend-multiply contrast-125'
-                }`}
+              className="h-12 w-auto transition-all duration-300"
             />
           </div>
 
@@ -166,9 +153,9 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="col-span-1">
           <img
-            src="/Hengkang-Webpage/assets/images/logo.png"
+            src="/Hengkang-Webpage/assets/images/logo_white_clean.png"
             alt="Hengkang Technology"
-            className="h-14 w-auto mb-4 mix-blend-screen invert grayscale brightness-[100] contrast-[100]"
+            className="h-14 w-auto mb-4"
           />
           <p className="text-slate-400 text-sm leading-relaxed">
             {t('footer.tagline')}<br />
