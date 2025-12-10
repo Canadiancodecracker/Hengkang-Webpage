@@ -33,9 +33,9 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer" onClick={() => navigate('/')}>
             <img
-              src={!scrolled ? "/Hengkang-Webpage/assets/images/logo_header_final.png" : "/Hengkang-Webpage/assets/images/logo_color_clean.png"}
+              src={!scrolled ? "/Hengkang-Webpage/assets/images/logo_header_final.png" : "/Hengkang-Webpage/assets/images/logo_color_final.png"}
               alt="Hengkang Technology"
-              className="h-12 w-auto transition-all duration-300"
+              className="h-14 w-auto transition-all duration-300"
             />
           </div>
 
