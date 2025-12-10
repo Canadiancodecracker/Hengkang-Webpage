@@ -33,7 +33,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer" onClick={() => navigate('/')}>
             <img
-              src={!scrolled ? "/Hengkang-Webpage/assets/images/logo_white_clean.png" : "/Hengkang-Webpage/assets/images/logo_color_clean.png"}
+              src={!scrolled ? "/Hengkang-Webpage/assets/images/logo_light.png" : "/Hengkang-Webpage/assets/images/logo_color_clean.png"}
               alt="Hengkang Technology"
               className="h-12 w-auto transition-all duration-300"
             />
@@ -153,7 +153,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="col-span-1">
           <img
-            src="/Hengkang-Webpage/assets/images/logo_white_clean.png"
+            src="/Hengkang-Webpage/assets/images/logo_light.png"
             alt="Hengkang Technology"
             className="h-14 w-auto mb-4"
           />
